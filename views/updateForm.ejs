@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update User : <%=data.name%></title>
+</head>
+<body>
+    <h1>Update User: <%=data.name%> </h1>
+<form action="/updateUser" method="post" enctype="application/x-www-form-urlencoded">
+    <input name="id" value="<%= data.id%>" hidden>
+    <input name="name" value="<%= data.name%>">
+    <input name="address" value="<%= data.address%>">
+    <input name="phone" value="<%= data.phone%>">
+
+    <button type="submit">Updata</button>
+</form>
+</body>
+</html>
